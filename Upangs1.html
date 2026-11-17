@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Four Upangas | Indian Knowledge System</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #faf8f3;
+    color: #29251f;
+}
+
+header {
+    background: #201b18;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #f5b94c;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #f5b94c;
+}
+
+.hero {
+    min-height: 570px;
+    background:
+    linear-gradient(90deg, rgba(27,22,18,.93), rgba(27,22,18,.48)),
+    url('https://images.unsplash.com/photo-1604608672516-1b2c7a7c4d9b?auto=format&fit=crop&w=1800&q=85');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+    animation: appear 1.2s ease;
+}
+
+.tag {
+    color: #f5b94c;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 6vw, 70px);
+    line-height: 1.15;
+    margin: 22px 0;
+}
+
+.hero h1 span {
+    color: #f5b94c;
+}
+
+.hero p {
+    color: #e4ded6;
+    line-height: 1.9;
+    font-size: 16px;
+    max-width: 580px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: #e9a83d;
+    color: #201b18;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 85px 9%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title small {
+    color: #b77b24;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.section-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin: 12px 0;
+}
+
+.section-title p {
+    color: #777;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.intro {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    line-height: 2;
+    color: #5d574f;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 45px;
+}
+
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #eee5d9;
+    box-shadow: 0 8px 25px rgba(0,0,0,.04);
+    transition: .35s;
+}
+
+.card:hover {
+    transform: translateY(-9px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.10);
+}
+
+.number {
+    color: #d99b37;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.symbol {
+    font-size: 38px;
+    margin: 18px 0;
+}
+
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.sanskrit {
+    color: #bd852e;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.card p {
+    color: #6b665e;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.card h4 {
+    margin: 20px 0 8px;
+    color: #3d352a;
+}
+
+.highlight {
+    background: #f0e7d7;
+    padding: 75px 10%;
+    text-align: center;
+}
+
+.highlight h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.highlight p {
+    max-width: 800px;
+    margin: auto;
+    color: #62584b;
+    line-height: 2;
+}
+
+footer {
+    background: #201b18;
+    color: #ddd;
+    padding: 40px 10%;
+    text-align: center;
+}
+
+footer h3 {
+    font-family: 'Playfair Display', serif;
+    color: #f5b94c;
+    margin-bottom: 12px;
+}
+
+footer p {
+    font-size: 12px;
+    line-height: 2;
+    color: #aaa;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media(max-width:700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 12px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 60px 7%;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">BHARATIYA VIDYA</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#upangas">Four Upāṅgas</a>
+        <a href="#importance">Importance</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<div class="hero" id="home">
+    <div class="hero-content">
+        <div class="tag">INDIAN KNOWLEDGE SYSTEM</div>
+        <h1>The Four <span>Upāṅgas</span></h1>
+        <p>
+            Discover the intellectual foundations of ancient India.
+            Explore four important branches of knowledge that
+            shaped Indian philosophy, reasoning, history and society.
+        </p>
+        <a href="#upangas" class="btn">Explore the Four Upāṅgas →</a>
+    </div>
+</div>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <div class="section-title">
+        <small>ANCIENT WISDOM</small>
+        <h2>Introduction</h2>
+    </div>
+
+    <div class="intro">
+        <p>
+            The Indian Knowledge System (IKS) represents India's
+            rich intellectual and cultural heritage. Traditionally,
+            knowledge was organised into different branches known
+            as Vidyāsthānas.
+        </p>
+        <br>
+        <p>
+            The Four Upāṅgas are important supplementary disciplines
+            that help understand, interpret and apply traditional
+            knowledge. They include Nyāya, Mīmāṃsā, Itihāsa-Purāṇa
+            and Dharmaśāstra.
+        </p>
+    </div>
+</section>
+
+<!-- FOUR UPANGAS -->
+<section id="upangas" style="background:#f2eee7;">
+    <div class="section-title">
+        <small>THE FOUR PILLARS</small>
+        <h2>Explore the Upāṅgas</h2>
+        <p>Four disciplines that represent different dimensions of Indian intellectual tradition.</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="number">01 / LOGIC</div>
+            <div class="symbol">⚖️</div>
+            <h3>Nyāya</h3>
+            <div class="sanskrit">न्याय</div>
+            <p>
+                Nyāya is the school of Indian philosophy concerned
+                with logic, reasoning and valid knowledge. It teaches
+                systematic thinking and methods of arriving at
+                reliable conclusions.
+            </p>
+            <h4>Key Concepts</h4>
+            <p>
+                • Logical reasoning<br>
+                • Critical thinking<br>
+                • Methods of knowledge<br>
+                • Debate and argumentation
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="number">02 / INTERPRETATION</div>
+            <div class="symbol">📜</div>
+            <h3>Mīmāṃsā</h3>
+            <div class="sanskrit">मीमांसा</div>
+            <p>
+                Mīmāṃsā focuses on the interpretation of Vedic texts
+                and understanding their meaning. It examines language,
+                rituals and the principles used to interpret sacred
+                instructions.
+            </p>
+            <h4>Key Concepts</h4>
+            <p>
+                • Vedic interpretation<br>
+                • Analysis of language<br>
+                • Ritual philosophy<br>
+                • Understanding textual meaning
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="number">03 / HISTORY & CULTURE</div>
+            <div class="symbol">🏛️</div>
+            <h3>Itihāsa–Purāṇa</h3>
+            <div class="sanskrit">इतिहास–पुराण</div>
+            <p>
+                Itihāsa and Purāṇa preserve traditional narratives,
+                cultural memories, philosophical teachings and
+                accounts of ancient Indian traditions.
+            </p>
+            <h4>Key Concepts</h4>
+            <p>
+                • Rāmāyaṇa and Mahābhārata<br>
+                • Purāṇic literature<br>
+                • Cultural heritage<br>
+                • Traditional knowledge and values
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="number">04 / ETHICS & SOCIETY</div>
+            <div class="symbol">⚖️</div>
+            <h3>Dharmaśāstra</h3>
+            <div class="sanskrit">धर्मशास्त्र</div>
+            <p>
+                Dharmaśāstra deals with Dharma, duties, ethical
+                principles and social conduct. It discusses
+                responsibilities of individuals and the organisation
+                of society in traditional Indian thought.
+            </p>
+            <h4>Key Concepts</h4>
+            <p>
+                • Ethics and morality<br>
+                • Duties and responsibilities<br>
+                • Social conduct<br>
+                • Traditional legal principles
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- IMPORTANCE -->
+<div class="highlight" id="importance">
+    <div class="section-title">
+        <small>KNOWLEDGE & WISDOM</small>
+        <h2>Why Are the Four Upāṅgas Important?</h2>
+    </div>
+    <p>
+        The Four Upāṅgas provide different ways of understanding
+        knowledge and human life. Nyāya develops reasoning,
+        Mīmāṃsā develops interpretation, Itihāsa-Purāṇa preserves
+        cultural knowledge, and Dharmaśāstra discusses ethical
+        and social responsibilities.
+    </p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <h3>Indian Knowledge System</h3>
+    <p>Exploring India's Intellectual and Cultural Heritage</p>
+    <p>Educational Project | Four Upāṅgas</p>
+    <p>© 2026 | Designed for Learning</p>
+</footer>
+
+</body>
+</html>
