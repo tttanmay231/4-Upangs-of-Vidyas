@@ -4,169 +4,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Four Upangas | Indian Knowledge System</title>
+<title>Indian Knowledge System | Four Upangas</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-
- 
-/* INTRODUCTION TO VIDYAS */
-
-#vidyas {
-    background: var(--bg);
-}
-
-.vidya-intro {
-    max-width: 950px;
-    margin: auto;
-    padding: 35px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-left: 5px solid var(--gold);
-    border-radius: 12px;
-}
-
-.vidya-intro h3 {
-    font: 700 30px 'Playfair Display';
-    margin-bottom: 18px;
-    color: var(--gold);
-}
-
-.vidya-intro p {
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 2;
-    color: var(--text);
-    margin-bottom: 15px;
-}
-
-.vidya-number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 45px;
-    margin: 45px 0;
-    text-align: center;
-}
-
-.vidya-number div {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.vidya-number strong {
-    font: 700 35px 'Playfair Display';
-    color: var(--gold);
-}
-
-.vidya-number span {
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--muted);
-}
-
-.vidya-number .plus {
-    font-size: 30px;
-    color: var(--gold);
-    font-weight: 700;
-}
-
-.vidya-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    align-items: start;
-    margin-top: 40px;
-}
-
-.vidya-card {
-    background: var(--surface);
-    padding: 32px;
-    border: 1px solid var(--border);
-    border-radius: 15px;
-    transition: .3s;
-}
-
-.vidya-card:hover {
-    transform: translateY(-8px);
-    border-color: var(--gold);
-    box-shadow: 0 12px 30px rgba(0,0,0,.08);
-}
-
-.vidya-icon {
-    font-size: 42px;
-    margin: 20px 0;
-}
-
-.vidya-count {
-    color: var(--gold);
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 2px;
-}
-
-.vidya-card h3 {
-    font: 700 30px 'Playfair Display';
-    margin-top: 15px;
-}
-
-.vidya-card .sanskrit {
-    font-size: 21px;
-    font-weight: 700;
-    margin: 8px 0 20px;
-}
-
-.vidya-card > p {
-    color: var(--text);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 2;
-    margin-bottom: 20px;
-}
-
-.vidya-card .details {
-    margin-top: 22px;
-}
-
-.vidya-card .details p {
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 2;
-    color: var(--text);
-}
-
-.vidya-card .details b {
-    font-size: 19px;
-    font-weight: 800;
-    color: var(--gold);
-}
-
-@media(max-width:850px) {
-    .vidya-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .vidya-number {
-        gap: 20px;
-    }
-}
-
-@media(max-width:500px) {
-    .vidya-intro {
-        padding: 22px;
-    }
-
-    .vidya-number strong {
-        font-size: 25px;
-    }
-
-    .vidya-number span {
-        font-size: 12px;
-    }
-}
-
 :root {
  --bg:#faf7f0;
  --surface:#fff;
@@ -203,8 +45,15 @@ body {
  transition:.3s;
 }
 
-a {text-decoration:none;color:inherit}
-button {font-family:inherit;cursor:pointer}
+a {
+ text-decoration:none;
+ color:inherit;
+}
+
+button {
+ font-family:inherit;
+ cursor:pointer;
+}
 
 /* NAVIGATION */
 
@@ -232,13 +81,15 @@ nav {
 }
 
 .navlinks a {
- font-size:15px;
+ font-size:14px;
  font-weight:600;
  color:#eee;
  transition:.2s;
 }
 
-.navlinks a:hover {color:#f1bc60}
+.navlinks a:hover {
+ color:#f1bc60;
+}
 
 .nav-actions {
  display:flex;
@@ -255,9 +106,11 @@ nav {
  font-size:17px;
 }
 
-.menu-btn {display:none}
+.menu-btn {
+ display:none;
+}
 
-/* HERO */
+/* HERO SECTION */
 
 .hero {
  min-height:620px;
@@ -287,7 +140,9 @@ nav {
  margin:24px 0;
 }
 
-.hero h1 span {color:#f0bc61}
+.hero h1 span {
+ color:#f0bc61;
+}
 
 .hero p {
  line-height:2;
@@ -299,12 +154,12 @@ nav {
 
 .btn {
  display:inline-block;
- margin-top:30px;
+ margin-top:25px;
  padding:15px 28px;
  background:var(--gold);
  color:#211b17;
  border-radius:7px;
- font-size:16px;
+ font-size:15px;
  font-weight:700;
  border:0;
  transition:.3s;
@@ -315,13 +170,15 @@ nav {
  background:#f1c36e;
 }
 
-/* SECTIONS */
+/* GENERAL SECTIONS */
 
-section {padding:90px 9%}
+section {
+ padding:85px 9%;
+}
 
 .heading {
  text-align:center;
- margin-bottom:48px;
+ margin-bottom:45px;
 }
 
 .heading small {
@@ -345,6 +202,8 @@ section {padding:90px 9%}
  font-weight:500;
 }
 
+/* INTRODUCTION */
+
 .intro {
  max-width:900px;
  margin:auto;
@@ -354,8 +213,6 @@ section {padding:90px 9%}
  font-size:18px;
  font-weight:500;
 }
-
-/* STATISTICS */
 
 .stats {
  display:grid;
@@ -384,14 +241,148 @@ section {padding:90px 9%}
  margin-top:8px;
 }
 
+/* VIDYA INTRODUCTION */
+
+#vidyas {
+ background:var(--bg);
+}
+
+.vidya-intro {
+ max-width:950px;
+ margin:auto;
+ padding:35px;
+ background:var(--surface);
+ border:1px solid var(--border);
+ border-left:5px solid var(--gold);
+ border-radius:12px;
+}
+
+.vidya-intro h3 {
+ font:700 30px 'Playfair Display';
+ margin-bottom:18px;
+ color:var(--gold);
+}
+
+.vidya-intro p {
+ font-size:17px;
+ font-weight:500;
+ line-height:2;
+ color:var(--text);
+ margin-bottom:15px;
+}
+
+.vidya-number {
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ gap:45px;
+ margin:45px 0;
+ text-align:center;
+}
+
+.vidya-number div {
+ display:flex;
+ flex-direction:column;
+ gap:8px;
+}
+
+.vidya-number strong {
+ font:700 35px 'Playfair Display';
+ color:var(--gold);
+}
+
+.vidya-number span {
+ font-size:15px;
+ font-weight:700;
+ color:var(--muted);
+}
+
+.vidya-number .plus {
+ font-size:30px;
+ color:var(--gold);
+ font-weight:700;
+}
+
+/* VIDYA CARDS */
+
+.vidya-grid {
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:25px;
+ align-items:start;
+ margin-top:40px;
+}
+
+.vidya-card {
+ background:var(--surface);
+ padding:32px;
+ border:1px solid var(--border);
+ border-radius:15px;
+ transition:.3s;
+}
+
+.vidya-card:hover {
+ transform:translateY(-8px);
+ border-color:var(--gold);
+ box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.vidya-icon {
+ font-size:42px;
+ margin:20px 0;
+}
+
+.vidya-count {
+ color:var(--gold);
+ font-size:13px;
+ font-weight:800;
+ letter-spacing:2px;
+}
+
+.vidya-card h3 {
+ font:700 30px 'Playfair Display';
+ margin-top:15px;
+}
+
+.vidya-card .sanskrit {
+ font-size:21px;
+ font-weight:700;
+ margin:8px 0 20px;
+}
+
+.vidya-card > p {
+ color:var(--text);
+ font-size:16px;
+ font-weight:500;
+ line-height:2;
+ margin-bottom:20px;
+}
+
+.vidya-card .details p {
+ font-size:15px;
+ font-weight:500;
+ line-height:2;
+ color:var(--text);
+}
+
+.vidya-card .details b {
+ font-size:19px;
+ font-weight:800;
+ color:var(--gold);
+}
+
 /* UPANGA CARDS */
 
+#upangas {
+ background:var(--soft);
+}
+
 .cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: start;
-    gap: 28px;
-    margin-top: 45px;
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ align-items:start;
+ gap:28px;
+ margin-top:45px;
 }
 
 .card {
@@ -458,6 +449,16 @@ section {padding:90px 9%}
  color:var(--gold);
 }
 
+/* CARD SUBHEADINGS */
+
+.card > b {
+ display:block;
+ color:var(--gold);
+ font-size:20px;
+ font-weight:800;
+ margin-bottom:10px;
+}
+
 /* EXPLORE BUTTON */
 
 .read {
@@ -509,7 +510,9 @@ section {padding:90px 9%}
 
 /* COMPARISON */
 
-.compare {background:var(--soft)}
+.compare {
+ background:var(--soft);
+}
 
 .compare-grid {
  display:grid;
@@ -526,9 +529,13 @@ section {padding:90px 9%}
  transition:.3s;
 }
 
-.compare-item:hover {transform:translateY(-6px)}
+.compare-item:hover {
+ transform:translateY(-6px);
+}
 
-.compare-item span {font-size:35px}
+.compare-item span {
+ font-size:35px;
+}
 
 .compare-item h3 {
  font:700 23px 'Playfair Display';
@@ -645,7 +652,9 @@ section {padding:90px 9%}
  min-height:28px;
 }
 
-.quiz-next {margin-top:18px}
+.quiz-next {
+ margin-top:18px;
+}
 
 /* FOOTER */
 
@@ -682,19 +691,40 @@ footer p {
 }
 
 @keyframes up {
- from {opacity:0;transform:translateY(25px)}
- to {opacity:1;transform:translateY(0)}
+ from {
+  opacity:0;
+  transform:translateY(25px);
+ }
+ to {
+  opacity:1;
+  transform:translateY(0);
+ }
 }
 
-/* MOBILE */
+/* MOBILE RESPONSIVENESS */
+
+@media(max-width:850px) {
+
+ .vidya-grid {
+  grid-template-columns:1fr;
+ }
+
+ .compare-grid {
+  grid-template-columns:repeat(2,1fr);
+ }
+
+}
 
 @media(max-width:750px) {
+
  nav {
   padding:15px 5%;
   flex-wrap:wrap;
  }
 
- .menu-btn {display:block}
+ .menu-btn {
+  display:block;
+ }
 
  .navlinks {
   display:none;
@@ -703,34 +733,80 @@ footer p {
   padding:20px;
  }
 
- .navlinks.open {display:flex}
+ .navlinks.open {
+  display:flex;
+ }
 
- .cards {grid-template-columns:1fr}
+ .cards {
+  grid-template-columns:1fr;
+ }
 
- .compare-grid {grid-template-columns:repeat(2,1fr)}
+ .stats {
+  grid-template-columns:1fr;
+ }
 
- .stats {grid-template-columns:1fr}
-
- section {padding:65px 6%}
+ section {
+  padding:65px 6%;
+ }
 
  .hero {
   padding:80px 7%;
   min-height:540px;
  }
 
- .hero p {font-size:16px}
+ .hero p {
+  font-size:16px;
+ }
 
- .heading h2 {font-size:34px}
+ .heading h2 {
+  font-size:34px;
+ }
 
- .card {padding:27px}
+ .card {
+  padding:27px;
+ }
 
- .card h3 {font-size:30px}
+ .card h3 {
+  font-size:30px;
+ }
 
- .card > p,.details p {font-size:16px}
+ .card > p,
+ .details p {
+  font-size:16px;
+ }
 
- .quiz-wrap {padding:23px}
+ .quiz-wrap {
+  padding:23px;
+ }
 
- #question {font-size:21px}
+ #question {
+  font-size:21px;
+ }
+
+}
+
+@media(max-width:500px) {
+
+ .vidya-intro {
+  padding:22px;
+ }
+
+ .vidya-number {
+  gap:20px;
+ }
+
+ .vidya-number strong {
+  font-size:25px;
+ }
+
+ .vidya-number span {
+  font-size:12px;
+ }
+
+ .compare-grid {
+  grid-template-columns:1fr;
+ }
+
 }
 
 </style>
@@ -741,159 +817,32 @@ footer p {
 <!-- NAVIGATION -->
 
 <nav>
+
  <div class="logo">BHARATIYA VIDYA</div>
 
  <div class="navlinks" id="navlinks">
   <a href="#home">Home</a>
   <a href="#about">About</a>
+  <a href="#vidyas">Vidyās</a>
   <a href="#upangas">Upāṅgas</a>
   <a href="#comparison">Comparison</a>
   <a href="#quiz">Quiz</a>
  </div>
 
  <div class="nav-actions">
-  <button class="nav-btn" onclick="toggleTheme()" title="Change theme">☾</button>
+  <button class="nav-btn" onclick="toggleTheme()" title="Dark mode">☾</button>
   <button class="nav-btn menu-btn" onclick="toggleMenu()">☰</button>
  </div>
+
 </nav>
 
 <!-- HERO -->
 
 <div class="hero" id="home">
+
  <div class="hero-content">
+
   <div class="eyebrow">DISCOVER ANCIENT INDIAN WISDOM</div>
-
-<!-- INTRODUCTION TO VIDYAS -->
-
-<section id="vidyas">
-
-    <div class="heading reveal">
-        <small>INDIAN KNOWLEDGE SYSTEM</small>
-        <h2>Introduction to Vidyās</h2>
-        <p>Discover the traditional classification of knowledge in ancient India.</p>
-    </div>
-
-    <div class="vidya-intro reveal">
-        <h3>What are Vidyās?</h3>
-
-        <p>
-            Vidyās refer to different branches of knowledge and learning
-            in the Indian Knowledge System. Ancient Indian scholars
-            organised knowledge into various disciplines to develop
-            intellectual understanding, spiritual wisdom and practical skills.
-        </p>
-
-        <p>
-            Traditionally, fourteen major branches of knowledge are
-            known as the <strong>Chaturdaśa Vidyāsthānas</strong>.
-            They consist of four Vedas, six Vedāṅgas and four Upāṅgas.
-        </p>
-    </div>
-
-    <div class="vidya-number reveal">
-        <div>
-            <strong>14</strong>
-            <span>Vidyāsthānas</span>
-        </div>
-        <div class="plus">=</div>
-        <div>
-            <strong>4 + 6 + 4</strong>
-            <span>Knowledge Disciplines</span>
-        </div>
-    </div>
-
-    <div class="vidya-grid">
-
-        <!-- VEDAS -->
-        <div class="vidya-card reveal">
-            <div class="vidya-icon">📜</div>
-            <span class="vidya-count">01 / FOUR BRANCHES</span>
-            <h3>Four Vedas</h3>
-            <div class="sanskrit">चत्वारो वेदाः</div>
-
-            <p>
-                The Vedas are among the oldest foundational texts
-                of Indian tradition. They contain hymns, prayers,
-                knowledge and philosophical teachings.
-            </p>
-
-            <button class="read" onclick="expand(this)">
-                Explore more +
-            </button>
-
-            <div class="details">
-                <b>The Four Vedas</b>
-                <p>
-                    1. Rigveda – Hymns and prayers.<br>
-                    2. Yajurveda – Ritual formulas and procedures.<br>
-                    3. Samaveda – Melodies and chants.<br>
-                    4. Atharvaveda – Hymns, prayers and everyday traditions.
-                </p>
-            </div>
-        </div>
-
-        <!-- VEDANGAS -->
-        <div class="vidya-card reveal">
-            <div class="vidya-icon">📚</div>
-            <span class="vidya-count">02 / SIX BRANCHES</span>
-            <h3>Six Vedāṅgas</h3>
-            <div class="sanskrit">षड् वेदाङ्गानि</div>
-
-            <p>
-                Vedāṅgas are six supplementary disciplines that
-                help in understanding, preserving and correctly
-                interpreting the Vedas.
-            </p>
-
-            <button class="read" onclick="expand(this)">
-                Explore more +
-            </button>
-
-            <div class="details">
-                <b>The Six Vedāṅgas</b>
-                <p>
-                    1. Śikṣā – Phonetics and pronunciation.<br>
-                    2. Kalpa – Ritual procedures.<br>
-                    3. Vyākaraṇa – Grammar.<br>
-                    4. Nirukta – Etymology and explanation of words.<br>
-                    5. Chandas – Vedic metres.<br>
-                    6. Jyotiṣa – Astronomy and calendrical calculations.
-                </p>
-            </div>
-        </div>
-
-        <!-- UPANGAS -->
-        <div class="vidya-card reveal">
-            <div class="vidya-icon">⚖️</div>
-            <span class="vidya-count">03 / FOUR BRANCHES</span>
-            <h3>Four Upāṅgas</h3>
-            <div class="sanskrit">चत्वार उपाङ्गानि</div>
-
-            <p>
-                Upāṅgas are supplementary disciplines that
-                contribute to understanding philosophy, logic,
-                traditional narratives and ethical principles.
-            </p>
-
-            <button class="read" onclick="expand(this)">
-                Explore more +
-            </button>
-
-            <div class="details">
-                <b>The Four Upāṅgas</b>
-                <p>
-                    1. Purāṇa – Traditional narratives and cultural knowledge.<br>
-                    2. Nyāya – Logic and reasoning.<br>
-                    3. Mīmāṃsā – Interpretation of Vedic texts.<br>
-                    4. Dharmaśāstra – Duties, ethics and social conduct.
-                </p>
-                <a href="#upangas" class="btn">Explore Four Upāṅgas →</a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
 
   <h1>The Four <span>Upāṅgas</span></h1>
 
@@ -903,36 +852,43 @@ footer p {
    interpretation, cultural knowledge and ethical conduct.
   </p>
 
-  <a class="btn" href="#upangas">Explore the knowledge ↓</a>
+  <a class="btn" href="#vidyas">Explore Indian Knowledge ↓</a>
+
  </div>
+
 </div>
 
-<!-- ABOUT -->
+<!-- ABOUT IKS -->
 
 <section id="about">
 
  <div class="heading reveal">
   <small>THE FOUNDATION</small>
-  <h2>What Are the Four Upāṅgas?</h2>
-  <p>Understanding the supplementary branches of traditional Indian knowledge.</p>
+  <h2>Indian Knowledge System</h2>
+  <p>Understanding India's rich intellectual and cultural heritage.</p>
  </div>
 
  <div class="intro reveal">
+
   <p>
-   The Indian Knowledge System represents a rich heritage of
-   intellectual, philosophical and cultural traditions.
-   Traditionally, knowledge was organised into fourteen
-   Vidyāsthānas — four Vedas, six Vedāṅgas and four Upāṅgas.
+   The Indian Knowledge System represents the accumulated
+   knowledge, traditions, philosophies and practices developed
+   in India over thousands of years.
   </p>
+
   <br>
+
   <p>
-   The four Upāṅgas are Purāṇa, Nyāya, Mīmāṃsā and Dharmaśāstra.
-   Each discipline contributes a distinct way of understanding
-   knowledge, society and human life.
+   It covers diverse fields including philosophy, mathematics,
+   astronomy, medicine, literature, architecture, language
+   and ethics. It reflects the intellectual contributions
+   of ancient Indian scholars and traditions.
   </p>
+
  </div>
 
  <div class="stats reveal">
+
   <div class="stat">
    <strong>14</strong>
    <p>Traditional Vidyāsthānas</p>
@@ -940,25 +896,199 @@ footer p {
 
   <div class="stat">
    <strong>4</strong>
-   <p>Upāṅgas</p>
+   <p>Vedas</p>
   </div>
 
   <div class="stat">
-   <strong>1</strong>
-   <p>Rich Knowledge Heritage</p>
+   <strong>6 + 4</strong>
+   <p>Vedāṅgas and Upāṅgas</p>
   </div>
+
+ </div>
+
+</section>
+
+<!-- INTRODUCTION TO VIDYAS -->
+
+<section id="vidyas">
+
+ <div class="heading reveal">
+  <small>INDIAN KNOWLEDGE SYSTEM</small>
+  <h2>Introduction to Vidyās</h2>
+  <p>Discover the traditional classification of knowledge in ancient India.</p>
+ </div>
+
+ <div class="vidya-intro reveal">
+
+  <h3>What are Vidyās?</h3>
+
+  <p>
+   Vidyās refer to different branches of knowledge and learning
+   in the Indian Knowledge System. Ancient Indian scholars
+   organised knowledge into various disciplines to develop
+   intellectual understanding, spiritual wisdom and practical skills.
+  </p>
+
+  <p>
+   Traditionally, fourteen major branches of knowledge are
+   known as the <strong>Chaturdaśa Vidyāsthānas</strong>.
+   They consist of four Vedas, six Vedāṅgas and four Upāṅgas.
+  </p>
+
+ </div>
+
+ <div class="vidya-number reveal">
+
+  <div>
+   <strong>14</strong>
+   <span>Vidyāsthānas</span>
+  </div>
+
+  <div class="plus">=</div>
+
+  <div>
+   <strong>4 + 6 + 4</strong>
+   <span>Knowledge Disciplines</span>
+  </div>
+
+ </div>
+
+ <div class="heading reveal">
+  <small>THE THREE GROUPS</small>
+  <h2>Classification of Vidyās</h2>
+  <p>The fourteen traditional disciplines are divided into three groups.</p>
+ </div>
+
+ <div class="vidya-grid">
+
+  <!-- VEDAS -->
+
+  <div class="vidya-card reveal">
+
+   <div class="vidya-icon">📜</div>
+
+   <span class="vidya-count">01 / FOUR BRANCHES</span>
+
+   <h3>Four Vedas</h3>
+
+   <div class="sanskrit">चत्वारो वेदाः</div>
+
+   <p>
+    The Vedas are foundational sacred texts of Indian tradition.
+    They contain hymns, prayers, ritual knowledge and
+    philosophical teachings.
+   </p>
+
+   <button class="read" onclick="expand(this)">Explore more +</button>
+
+   <div class="details">
+
+    <b>The Four Vedas</b>
+
+    <p>
+     1. Rigveda – Hymns and prayers.<br>
+     2. Yajurveda – Ritual formulas and procedures.<br>
+     3. Samaveda – Melodies and chants.<br>
+     4. Atharvaveda – Hymns, prayers and everyday traditions.
+    </p>
+
+   </div>
+
+  </div>
+
+  <!-- VEDANGAS -->
+
+  <div class="vidya-card reveal">
+
+   <div class="vidya-icon">📚</div>
+
+   <span class="vidya-count">02 / SIX BRANCHES</span>
+
+   <h3>Six Vedāṅgas</h3>
+
+   <div class="sanskrit">षड् वेदाङ्गानि</div>
+
+   <p>
+    Vedāṅgas are six supplementary disciplines that help
+    in understanding, preserving and correctly interpreting
+    the Vedas.
+   </p>
+
+   <button class="read" onclick="expand(this)">Explore more +</button>
+
+   <div class="details">
+
+    <b>The Six Vedāṅgas</b>
+
+    <p>
+     1. Śikṣā – Phonetics and pronunciation.<br>
+     2. Kalpa – Ritual procedures.<br>
+     3. Vyākaraṇa – Grammar.<br>
+     4. Nirukta – Etymology and explanation of words.<br>
+     5. Chandas – Vedic metres.<br>
+     6. Jyotiṣa – Astronomy and calendrical calculations.
+    </p>
+
+   </div>
+
+  </div>
+
+  <!-- UPANGAS -->
+
+  <div class="vidya-card reveal">
+
+   <div class="vidya-icon">⚖️</div>
+
+   <span class="vidya-count">03 / FOUR BRANCHES</span>
+
+   <h3>Four Upāṅgas</h3>
+
+   <div class="sanskrit">चत्वार उपाङ्गानि</div>
+
+   <p>
+    Upāṅgas are supplementary disciplines that contribute
+    to understanding philosophy, logic, traditional narratives
+    and ethical principles.
+   </p>
+
+   <button class="read" onclick="expand(this)">Explore more +</button>
+
+   <div class="details">
+
+    <b>The Four Upāṅgas</b>
+
+    <p>
+     1. Purāṇa – Traditional narratives and cultural knowledge.<br>
+     2. Nyāya – Logic and reasoning.<br>
+     3. Mīmāṃsā – Interpretation of Vedic texts.<br>
+     4. Dharmaśāstra – Duties, ethics and social conduct.
+    </p>
+
+    <a href="#upangas" class="btn">Explore Four Upāṅgas →</a>
+
+   </div>
+
+  </div>
+
  </div>
 
 </section>
 
 <!-- FOUR UPANGAS -->
 
-<section id="upangas" style="background:var(--soft)">
+<section id="upangas">
 
  <div class="heading reveal">
+
   <small>EXPLORE THE DISCIPLINES</small>
+
   <h2>Four Pillars of Knowledge</h2>
-  <p>Click on each card to discover detailed descriptions, examples and contributions.</p>
+
+  <p>
+   Click on each card to discover detailed descriptions,
+   examples and contributions.
+  </p>
+
  </div>
 
  <div class="cards">
@@ -968,12 +1098,14 @@ footer p {
   <div class="card reveal">
 
    <div class="num">01 — CULTURAL KNOWLEDGE</div>
+
    <div class="symbol">📜</div>
 
    <h3>Purāṇa</h3>
+
    <div class="sanskrit">पुराण</div>
 
-   <b style="display:block;color:var(--gold);font-size:20px;margin-bottom:10px">Description</b>
+   <b>Description</b>
 
    <p>
     Purāṇas are traditional Indian texts that preserve ancient
@@ -982,7 +1114,7 @@ footer p {
     creation stories and the history of dynasties.
    </p>
 
-   <b style="display:block;color:var(--gold);font-size:20px;margin-top:22px">Key Concepts</b>
+   <b style="margin-top:22px">Key Concepts</b>
 
    <ul>
     <li>Ancient narratives and traditions</li>
@@ -995,6 +1127,7 @@ footer p {
    <div class="details">
 
     <b>Examples</b>
+
     <p>
      1. Viṣṇu Purāṇa – Discusses creation, cosmology and dynasties.<br>
      2. Bhāgavata Purāṇa – Focuses on devotion and the life of Krishna.<br>
@@ -1002,6 +1135,7 @@ footer p {
     </p>
 
     <b>Contribution</b>
+
     <p>
      • Preserves India's cultural and religious heritage.<br>
      • Transmits traditional knowledge through stories.<br>
@@ -1010,6 +1144,7 @@ footer p {
     </p>
 
    </div>
+
   </div>
 
   <!-- NYAYA -->
@@ -1017,12 +1152,14 @@ footer p {
   <div class="card reveal">
 
    <div class="num">02 — LOGIC & REASONING</div>
+
    <div class="symbol">⚖️</div>
 
    <h3>Nyāya</h3>
+
    <div class="sanskrit">न्याय</div>
 
-   <b style="display:block;color:var(--gold);font-size:20px;margin-bottom:10px">Description</b>
+   <b>Description</b>
 
    <p>
     Nyāya is a school of Indian philosophy concerned with logic,
@@ -1030,7 +1167,7 @@ footer p {
     of thinking, inference, debate and arriving at reliable conclusions.
    </p>
 
-   <b style="display:block;color:var(--gold);font-size:20px;margin-top:22px">Key Concepts</b>
+   <b style="margin-top:22px">Key Concepts</b>
 
    <ul>
     <li>Logical reasoning</li>
@@ -1043,6 +1180,7 @@ footer p {
    <div class="details">
 
     <b>Examples</b>
+
     <p>
      1. Nyāya Sūtras – Traditionally attributed to Akṣapāda Gautama.<br>
      2. Pratyakṣa – Knowledge through perception.<br>
@@ -1050,6 +1188,7 @@ footer p {
     </p>
 
     <b>Contribution</b>
+
     <p>
      • Develops logical and analytical thinking.<br>
      • Encourages questioning and critical examination.<br>
@@ -1058,6 +1197,7 @@ footer p {
     </p>
 
    </div>
+
   </div>
 
   <!-- MIMAMSA -->
@@ -1065,12 +1205,14 @@ footer p {
   <div class="card reveal">
 
    <div class="num">03 — INTERPRETATION</div>
+
    <div class="symbol">📚</div>
 
    <h3>Mīmāṃsā</h3>
+
    <div class="sanskrit">मीमांसा</div>
 
-   <b style="display:block;color:var(--gold);font-size:20px;margin-bottom:10px">Description</b>
+   <b>Description</b>
 
    <p>
     Mīmāṃsā is a philosophical discipline that focuses on the
@@ -1079,7 +1221,7 @@ footer p {
     used to understand sacred texts.
    </p>
 
-   <b style="display:block;color:var(--gold);font-size:20px;margin-top:22px">Key Concepts</b>
+   <b style="margin-top:22px">Key Concepts</b>
 
    <ul>
     <li>Vedic interpretation</li>
@@ -1092,6 +1234,7 @@ footer p {
    <div class="details">
 
     <b>Examples</b>
+
     <p>
      1. Mīmāṃsā Sūtras – Traditionally attributed to Jaimini.<br>
      2. Śabara Bhāṣya – An important commentary on the Mīmāṃsā Sūtras.<br>
@@ -1099,6 +1242,7 @@ footer p {
     </p>
 
     <b>Contribution</b>
+
     <p>
      • Develops systematic methods of textual interpretation.<br>
      • Explores the meaning of Vedic language.<br>
@@ -1107,6 +1251,7 @@ footer p {
     </p>
 
    </div>
+
   </div>
 
   <!-- DHARMASHASTRA -->
@@ -1114,12 +1259,14 @@ footer p {
   <div class="card reveal">
 
    <div class="num">04 — ETHICS & SOCIETY</div>
+
    <div class="symbol">🏛️</div>
 
    <h3>Dharmaśāstra</h3>
+
    <div class="sanskrit">धर्मशास्त्र</div>
 
-   <b style="display:block;color:var(--gold);font-size:20px;margin-bottom:10px">Description</b>
+   <b>Description</b>
 
    <p>
     Dharmaśāstra is a traditional branch of Indian literature
@@ -1128,7 +1275,7 @@ footer p {
     individual responsibilities and traditional legal frameworks.
    </p>
 
-   <b style="display:block;color:var(--gold);font-size:20px;margin-top:22px">Key Concepts</b>
+   <b style="margin-top:22px">Key Concepts</b>
 
    <ul>
     <li>Ethics and morality</li>
@@ -1141,6 +1288,7 @@ footer p {
    <div class="details">
 
     <b>Examples</b>
+
     <p>
      1. Manusmṛti – A traditional text discussing Dharma and social duties.<br>
      2. Yājñavalkya Smṛti – Discusses conduct, legal matters and responsibilities.<br>
@@ -1148,6 +1296,7 @@ footer p {
     </p>
 
     <b>Contribution</b>
+
     <p>
      • Explores ethical and moral principles.<br>
      • Discusses duties and responsibilities.<br>
@@ -1156,9 +1305,11 @@ footer p {
     </p>
 
    </div>
+
   </div>
 
  </div>
+
 </section>
 
 <!-- COMPARISON -->
@@ -1166,9 +1317,15 @@ footer p {
 <section class="compare" id="comparison">
 
  <div class="heading reveal">
+
   <small>AT A GLANCE</small>
+
   <h2>Understanding the Differences</h2>
-  <p>Each Upāṅga has a unique role in the knowledge tradition.</p>
+
+  <p>
+   Each Upāṅga has a unique role in the knowledge tradition.
+  </p>
+
  </div>
 
  <div class="compare-grid reveal">
@@ -1198,11 +1355,13 @@ footer p {
   </div>
 
  </div>
+
 </section>
 
 <!-- QUOTE -->
 
 <div class="quote">
+
  <h2>Knowledge • Wisdom • Tradition</h2>
 
  <p>
@@ -1210,6 +1369,7 @@ footer p {
   tradition — preserving knowledge, questioning ideas,
   interpreting texts and exploring ethical responsibilities.
  </p>
+
 </div>
 
 <!-- QUIZ -->
@@ -1217,9 +1377,15 @@ footer p {
 <section id="quiz">
 
  <div class="heading reveal">
+
   <small>TEST YOUR KNOWLEDGE</small>
+
   <h2>Interactive Knowledge Quiz</h2>
-  <p>Answer these questions to test what you have learned.</p>
+
+  <p>
+   Answer these questions to test what you have learned.
+  </p>
+
  </div>
 
  <div class="quiz-wrap reveal">
@@ -1245,16 +1411,24 @@ footer p {
   </button>
 
  </div>
+
 </section>
 
 <!-- FOOTER -->
 
 <footer>
+
  <h3>BHARATIYA VIDYA</h3>
+
  <p>Indian Knowledge System | Four Upāṅgas</p>
+
  <p>Exploring the intellectual and cultural heritage of India.</p>
+
  <p>Educational Project • 2026</p>
+
 </footer>
+
+<!-- JAVASCRIPT -->
 
 <script>
 
@@ -1276,9 +1450,10 @@ document.querySelectorAll('.navlinks a').forEach(a => {
  });
 });
 
-/* EXPAND CARDS */
+/* EXPAND AND COLLAPSE CARDS */
 
 function expand(button) {
+
  const details = button.nextElementSibling;
 
  details.classList.toggle('show');
@@ -1286,24 +1461,32 @@ function expand(button) {
  button.textContent = details.classList.contains('show')
   ? 'Show less −'
   : 'Explore more +';
+
 }
 
 /* SCROLL ANIMATIONS */
 
 const revealObserver = new IntersectionObserver(entries => {
+
  entries.forEach(entry => {
+
   if(entry.isIntersecting) {
+
    entry.target.classList.add('visible');
+
    revealObserver.unobserve(entry.target);
+
   }
+
  });
+
 },{threshold:.12});
 
 document.querySelectorAll('.reveal').forEach(el => {
  revealObserver.observe(el);
 });
 
-/* QUIZ DATA */
+/* QUIZ QUESTIONS */
 
 const questions = [
 
@@ -1344,46 +1527,46 @@ const questions = [
 
 ];
 
-let current=0;
-let points=0;
-let answered=false;
+let current = 0;
+let points = 0;
+let answered = false;
 
 /* LOAD QUESTION */
 
 function loadQuestion() {
 
- answered=false;
+ answered = false;
 
- const q=questions[current];
+ const q = questions[current];
 
- document.getElementById('question').textContent=q.q;
+ document.getElementById('question').textContent = q.q;
 
- document.getElementById('progressText').textContent=
+ document.getElementById('progressText').textContent =
  `Question ${current+1} of ${questions.length}`;
 
- document.getElementById('score').textContent=
+ document.getElementById('score').textContent =
  `Score: ${points}`;
 
- document.getElementById('bar').style.width=
+ document.getElementById('bar').style.width =
  (current/questions.length*100)+'%';
 
- document.getElementById('feedback').textContent='';
+ document.getElementById('feedback').textContent = '';
 
- document.getElementById('next').style.display='none';
+ document.getElementById('next').style.display = 'none';
 
- const options=document.getElementById('options');
+ const options = document.getElementById('options');
 
- options.innerHTML='';
+ options.innerHTML = '';
 
- q.o.forEach((option,index)=>{
+ q.o.forEach((option,index) => {
 
-  const btn=document.createElement('button');
+  const btn = document.createElement('button');
 
-  btn.className='option';
+  btn.className = 'option';
 
-  btn.textContent=option;
+  btn.textContent = option;
 
-  btn.onclick=()=>checkAnswer(index,btn);
+  btn.onclick = () => checkAnswer(index,btn);
 
   options.appendChild(btn);
 
@@ -1397,47 +1580,47 @@ function checkAnswer(index,button) {
 
  if(answered) return;
 
- answered=true;
+ answered = true;
 
- const q=questions[current];
+ const q = questions[current];
 
- const all=document.querySelectorAll('.option');
+ const all = document.querySelectorAll('.option');
 
- all.forEach((btn,i)=>{
+ all.forEach((btn,i) => {
 
-  btn.disabled=true;
+  btn.disabled = true;
 
-  if(i===q.a) {
+  if(i === q.a) {
    btn.classList.add('correct');
   }
 
  });
 
- if(index===q.a) {
+ if(index === q.a) {
 
   points++;
 
-  document.getElementById('feedback').textContent=
+  document.getElementById('feedback').textContent =
   '✓ Correct! '+q.e;
 
  } else {
 
   button.classList.add('wrong');
 
-  document.getElementById('feedback').textContent=
+  document.getElementById('feedback').textContent =
   '✗ Not quite. '+q.e;
 
  }
 
- document.getElementById('score').textContent=
+ document.getElementById('score').textContent =
  `Score: ${points}`;
 
- document.getElementById('next').style.display='inline-block';
+ document.getElementById('next').style.display = 'inline-block';
 
- document.getElementById('next').textContent=
- current===questions.length-1
- ?'See results →'
- :'Next question →';
+ document.getElementById('next').textContent =
+ current === questions.length-1
+ ? 'See results →'
+ : 'Next question →';
 
 }
 
@@ -1447,7 +1630,7 @@ function nextQuestion() {
 
  current++;
 
- if(current<questions.length) {
+ if(current < questions.length) {
 
   loadQuestion();
 
@@ -1459,44 +1642,46 @@ function nextQuestion() {
 
 }
 
-/* FINAL RESULT */
+/* SHOW FINAL RESULT */
 
 function showResult() {
 
- document.getElementById('bar').style.width='100%';
+ document.getElementById('bar').style.width = '100%';
 
- document.getElementById('progressText').textContent=
+ document.getElementById('progressText').textContent =
  'Quiz completed!';
 
- document.getElementById('question').textContent=
+ document.getElementById('question').textContent =
  `You scored ${points} out of ${questions.length}!`;
 
- document.getElementById('options').innerHTML=
+ document.getElementById('options').innerHTML =
  '<p style="color:var(--muted);margin-top:15px">Great effort! Review the four Upāṅgas and try again.</p>';
 
- document.getElementById('feedback').textContent=
- points===5
- ?'Excellent! Perfect score.'
- :'Keep learning and try once more!';
+ document.getElementById('feedback').textContent =
+ points === 5
+ ? 'Excellent! Perfect score.'
+ : 'Keep learning and try once more!';
 
- const next=document.getElementById('next');
+ const next = document.getElementById('next');
 
- next.textContent='↻ Restart quiz';
+ next.textContent = '↻ Restart quiz';
 
- next.style.display='inline-block';
+ next.style.display = 'inline-block';
 
- next.onclick=()=>{
+ next.onclick = () => {
 
-  current=0;
-  points=0;
+  current = 0;
+  points = 0;
 
-  next.onclick=nextQuestion;
+  next.onclick = nextQuestion;
 
   loadQuestion();
 
  };
 
 }
+
+/* START QUIZ */
 
 loadQuestion();
 
