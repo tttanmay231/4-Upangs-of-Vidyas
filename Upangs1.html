@@ -9,6 +9,164 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
+ 
+/* INTRODUCTION TO VIDYAS */
+
+#vidyas {
+    background: var(--bg);
+}
+
+.vidya-intro {
+    max-width: 950px;
+    margin: auto;
+    padding: 35px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--gold);
+    border-radius: 12px;
+}
+
+.vidya-intro h3 {
+    font: 700 30px 'Playfair Display';
+    margin-bottom: 18px;
+    color: var(--gold);
+}
+
+.vidya-intro p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 2;
+    color: var(--text);
+    margin-bottom: 15px;
+}
+
+.vidya-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    margin: 45px 0;
+    text-align: center;
+}
+
+.vidya-number div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.vidya-number strong {
+    font: 700 35px 'Playfair Display';
+    color: var(--gold);
+}
+
+.vidya-number span {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--muted);
+}
+
+.vidya-number .plus {
+    font-size: 30px;
+    color: var(--gold);
+    font-weight: 700;
+}
+
+.vidya-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: start;
+    margin-top: 40px;
+}
+
+.vidya-card {
+    background: var(--surface);
+    padding: 32px;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.vidya-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+.vidya-icon {
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.vidya-count {
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.vidya-card h3 {
+    font: 700 30px 'Playfair Display';
+    margin-top: 15px;
+}
+
+.vidya-card .sanskrit {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 8px 0 20px;
+}
+
+.vidya-card > p {
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.vidya-card .details {
+    margin-top: 22px;
+}
+
+.vidya-card .details p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 2;
+    color: var(--text);
+}
+
+.vidya-card .details b {
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--gold);
+}
+
+@media(max-width:850px) {
+    .vidya-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vidya-number {
+        gap: 20px;
+    }
+}
+
+@media(max-width:500px) {
+    .vidya-intro {
+        padding: 22px;
+    }
+
+    .vidya-number strong {
+        font-size: 25px;
+    }
+
+    .vidya-number span {
+        font-size: 12px;
+    }
+}
+
 :root {
  --bg:#faf7f0;
  --surface:#fff;
@@ -604,6 +762,138 @@ footer p {
 <div class="hero" id="home">
  <div class="hero-content">
   <div class="eyebrow">DISCOVER ANCIENT INDIAN WISDOM</div>
+
+<!-- INTRODUCTION TO VIDYAS -->
+
+<section id="vidyas">
+
+    <div class="heading reveal">
+        <small>INDIAN KNOWLEDGE SYSTEM</small>
+        <h2>Introduction to Vidyās</h2>
+        <p>Discover the traditional classification of knowledge in ancient India.</p>
+    </div>
+
+    <div class="vidya-intro reveal">
+        <h3>What are Vidyās?</h3>
+
+        <p>
+            Vidyās refer to different branches of knowledge and learning
+            in the Indian Knowledge System. Ancient Indian scholars
+            organised knowledge into various disciplines to develop
+            intellectual understanding, spiritual wisdom and practical skills.
+        </p>
+
+        <p>
+            Traditionally, fourteen major branches of knowledge are
+            known as the <strong>Chaturdaśa Vidyāsthānas</strong>.
+            They consist of four Vedas, six Vedāṅgas and four Upāṅgas.
+        </p>
+    </div>
+
+    <div class="vidya-number reveal">
+        <div>
+            <strong>14</strong>
+            <span>Vidyāsthānas</span>
+        </div>
+        <div class="plus">=</div>
+        <div>
+            <strong>4 + 6 + 4</strong>
+            <span>Knowledge Disciplines</span>
+        </div>
+    </div>
+
+    <div class="vidya-grid">
+
+        <!-- VEDAS -->
+        <div class="vidya-card reveal">
+            <div class="vidya-icon">📜</div>
+            <span class="vidya-count">01 / FOUR BRANCHES</span>
+            <h3>Four Vedas</h3>
+            <div class="sanskrit">चत्वारो वेदाः</div>
+
+            <p>
+                The Vedas are among the oldest foundational texts
+                of Indian tradition. They contain hymns, prayers,
+                knowledge and philosophical teachings.
+            </p>
+
+            <button class="read" onclick="expand(this)">
+                Explore more +
+            </button>
+
+            <div class="details">
+                <b>The Four Vedas</b>
+                <p>
+                    1. Rigveda – Hymns and prayers.<br>
+                    2. Yajurveda – Ritual formulas and procedures.<br>
+                    3. Samaveda – Melodies and chants.<br>
+                    4. Atharvaveda – Hymns, prayers and everyday traditions.
+                </p>
+            </div>
+        </div>
+
+        <!-- VEDANGAS -->
+        <div class="vidya-card reveal">
+            <div class="vidya-icon">📚</div>
+            <span class="vidya-count">02 / SIX BRANCHES</span>
+            <h3>Six Vedāṅgas</h3>
+            <div class="sanskrit">षड् वेदाङ्गानि</div>
+
+            <p>
+                Vedāṅgas are six supplementary disciplines that
+                help in understanding, preserving and correctly
+                interpreting the Vedas.
+            </p>
+
+            <button class="read" onclick="expand(this)">
+                Explore more +
+            </button>
+
+            <div class="details">
+                <b>The Six Vedāṅgas</b>
+                <p>
+                    1. Śikṣā – Phonetics and pronunciation.<br>
+                    2. Kalpa – Ritual procedures.<br>
+                    3. Vyākaraṇa – Grammar.<br>
+                    4. Nirukta – Etymology and explanation of words.<br>
+                    5. Chandas – Vedic metres.<br>
+                    6. Jyotiṣa – Astronomy and calendrical calculations.
+                </p>
+            </div>
+        </div>
+
+        <!-- UPANGAS -->
+        <div class="vidya-card reveal">
+            <div class="vidya-icon">⚖️</div>
+            <span class="vidya-count">03 / FOUR BRANCHES</span>
+            <h3>Four Upāṅgas</h3>
+            <div class="sanskrit">चत्वार उपाङ्गानि</div>
+
+            <p>
+                Upāṅgas are supplementary disciplines that
+                contribute to understanding philosophy, logic,
+                traditional narratives and ethical principles.
+            </p>
+
+            <button class="read" onclick="expand(this)">
+                Explore more +
+            </button>
+
+            <div class="details">
+                <b>The Four Upāṅgas</b>
+                <p>
+                    1. Purāṇa – Traditional narratives and cultural knowledge.<br>
+                    2. Nyāya – Logic and reasoning.<br>
+                    3. Mīmāṃsā – Interpretation of Vedic texts.<br>
+                    4. Dharmaśāstra – Duties, ethics and social conduct.
+                </p>
+                <a href="#upangas" class="btn">Explore Four Upāṅgas →</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
   <h1>The Four <span>Upāṅgas</span></h1>
 
